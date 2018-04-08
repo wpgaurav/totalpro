@@ -1,0 +1,331 @@
+/*!
+ Project   : Total WordPress Theme
+ Purpose   : Tiny MCE Editor styles
+ */
+ /**
+ * 1.0 Body
+ * ----------------------------------------------------------------------------
+ */
+html .mceContentBody {
+  font-size: 100%;
+  padding-left: 3%;
+	padding-right:3%;
+}
+body {
+  color: #2d2d2d;
+  font-family: -system-ui,'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  vertical-align: baseline;
+	text-align:justify;
+}
+.pull-left {
+float:left;
+width:350px;
+}
+.pull-right {
+float:right;
+width:350px;
+}
+.pull-left, .pull-right, blockquote {
+padding: 10px 40px;
+margin: 5px 25px;
+color: #111;
+font-size: 20px;
+}
+
+.intro, .lead {
+text-align: justify!important;
+font-weight:400;
+	font-size:18px;
+}
+
+.blocks{
+	padding:25px;
+	font-size:16px;
+	font-family: system-ui, sans-serif;
+}
+.dark-block {
+	color:#fff;
+	background:#252526;
+	border-radius:5px;
+}
+.dark-block a {
+	color:#fff;
+}
+.light-block {
+	background:#fff;
+	box-shadow: 0.1px 0.3px 40px 0.1px #eee;
+}
+.gradient-alt{background:linear-gradient(90deg,#333333,#252526, #131313);
+margin: 0 -20px;
+	padding: 60px;
+	color:#fff;
+	font-size:21px;
+}
+	li.services_menu .link-inner {
+    border-radius: 15px!important;
+    box-shadow: 0px 3px 14px 0px #9999998c;
+}
+ol {
+	counter-reset:li; /* Initiate a counter */
+	margin-left:0; /* Remove the default left margin */
+	padding-left:0; /* Remove the default left padding */
+}
+ol > li {
+	position:relative; /* Create a positioning context */
+	margin:1em 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
+	padding:4px 8px; /* Add some spacing around the content */
+	list-style:none; /* Disable the normal item numbering */
+	border-top:2px solid #4CAF50;
+/* 	background:#f6f6f6; */
+}
+ol > li:before {
+	content:counter(li); /* Use the counter as content */
+	counter-increment:li; /* Increment the counter by 1 */
+	/* Position and style the number */
+	position:absolute;
+	top:-2px;
+	left:-2em;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	width:2em;
+	/* Some space between the number and the content in browsers that support
+	   generated content but not positioning it (Camino 2 is one example) */
+	margin-right:8px;
+	padding:4px;
+	border-top:2px solid #4CAF50;
+	color:#fff;
+	background:#4CAF50;
+	font-weight:bold;
+	text-align:center;
+}
+li ol,
+li ul {margin-top:6px;}
+ol ol li:last-child {margin-bottom:0;}
+abbr {
+    position: relative;
+	text-decoration:none;
+	border-bottom:2px dotted #d34500;
+}
+abbr:before{
+	content:"\f059";
+	font-family:fontAwesome;
+	margin-right:3px;
+	color:#d34500;
+}
+abbr:hover::after {
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    display: inline;
+    padding: 0.5em;
+/* 		min-width:180px; */
+    background: #eee;
+    content: attr(title);
+		color:#000;
+		text-align:left;
+}
+code {
+	background:#eee;
+	font-family: monospace;
+	font-size:13px;
+	padding:0 10px;
+	color:#000;
+}
+.dropcap {
+    font-size: 7em;
+    font-weight: 900;
+    color: #333;
+    background-image: -moz-linear-gradient(135deg, #00c4cc, #7d2ae8);
+    background-image: linear-gradient(-45deg, #00c4cc, #7d2ae8);
+    background-image: -webkit-linear-gradient(135deg, #00c4cc, #7d2ae8);
+    background-image: -o-linear-gradient(135deg, #00c4cc, #7d2ae8);
+    background-image: -ms-linear-gradient(135deg, #00c4cc, #7d2ae8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.dropcap.boxed {
+    background-color: #333;
+    font-size: 5em;
+    font-style: normal;
+    font-weight: 900;
+    background-image: -moz-linear-gradient(135deg, #e67e22, #d35400);
+    background-image: linear-gradient(-45deg, #e67e22, #d35400);
+    background-image: -webkit-linear-gradient(135deg, #e67e22, #d35400);
+    background-image: -o-linear-gradient(135deg, #e67e22, #d35400);
+    background-image: -ms-linear-gradient(135deg, #e67e22, #d35400);
+    -webkit-text-fill-color: #fff;
+}
+.pull-left, .pull-right, blockquote {
+    font-size: 20px;
+    font-weight: 400;
+    color: #111;
+    padding: 10px 40px;
+    margin: 5px 25px;
+}
+.pull-left, .pull-right {
+    background-color: #f2f2f2;
+}
+#breaking, .gradient, .button, .services_menu .link-inner {
+    color: #fff;
+    background-image: linear-gradient(273deg, #f39c12, #d84315, #e65100, #bf360c);
+    background-size: 1000% 1000%;
+    -webkit-animation: bgspinner 22s ease infinite;
+    -moz-animation: bgspinner 22s ease infinite;
+    animation: bgspinner 22s ease infinite;
+    -o-animation: bgspinner 22s ease infinite;
+}
+.home-hero {
+    background-image: -moz-linear-gradient(90deg, #945d60, #874c62);
+    background-image: -moz-linear-gradient(0deg, #945d60, #874c62);
+    background-image: -webkit-linear-gradient(90deg, #945d60, #874c62);
+    background-image: -webkit-linear-gradient(0deg, #945d60, #874c62);
+    background-image: -o-linear-gradient(90deg, #945d60, #874c62);
+    background-image: -o-linear-gradient(0deg, #945d60, #874c62);
+    background-image: -ms-linear-gradient(90deg, #945d60, #874c62);
+    background-image: linear-gradient(0deg, #945d60, #874c62);
+    background-image: -ms-linear-gradient(0deg, #945d60, #874c62);
+    background-image: linear-gradient(90deg, #945d60, #874c62);
+    background-size: 1000% 1000%;
+    -webkit-animation: bgspinner 10s ease infinite;
+    -moz-animation: bgspinner 10s ease infinite;
+    animation: bgspinner 10s ease infinite;
+    -o-animation: bgspinner 10s ease infinite;
+}
+.wp-caption p.wp-caption-text:before {
+    margin-right: 10px;
+    margin-left: 5px;
+    font-family: fontAwesome;
+    content: '\f030';
+}
+h2.banner {
+    background-color: #ffc107;
+    font-size: 50px;
+    text-align: center;
+    padding: 80px 20px;
+}
+h2.banner.dark, h2.banner-dark {
+    background-color: #6dab3c;
+    font-size: 30px !important;
+    color: #fff !important;
+    padding: 5px 20px;
+}
+h3.superlist {
+    font-size: 25px;
+    border-left: 10px solid #562b46;
+    padding: 5px 20px;
+}
+p.listhead:before {
+    font-family: fontawesome;
+    content: "\f05a";
+    color: #4caf50;
+    padding: 10px;
+}
+.author-speaks {
+    position: relative;
+    background-color: #ecf0f1;
+    -moz-box-shadow: -1px 2px 1px 1px rgba(224, 209, 209, 0.43);
+    -webkit-box-shadow: -1px 2px 1px 1px rgba(224, 209, 209, 0.43);
+    -o-box-shadow: -1px 2px 1px 1px rgba(224, 209, 209, 0.43);
+    box-shadow: -1px 2px 1px 1px rgba(224, 209, 209, 0.43);
+    border: 1px solid #e8e8e8;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    align-items: center;
+    padding: 20px;
+}
+a.service {
+    display: inline-block;
+    background-color: #a46497;
+    text-align: center;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    color: #fff;
+    border-bottom: 0 !important;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 5px;
+}
+h3.centered-heading {
+    background-color: #903f50;
+    font-weight: 700;
+    line-height: 3;
+    -moz-border-radius: 0 40px 0 0;
+    -webkit-border-radius: 0 40px 0 0;
+    -o-border-radius: 0 40px 0 0;
+    border-radius: 0 40px 0 0;
+    color: #fff !important;
+    padding: 0 20px;
+    margin: 0 -20px !important;
+}
+.after-centered-heading {
+    border: 2px solid #903f50;
+    clear: both;
+    padding: 50px 20px;
+    margin: -5px -20px 40px;
+}
+h3.centered-heading-2 {
+    background-color: #8dbf42;
+    font-weight: 700;
+    line-height: 3;
+    -moz-border-radius: 0 40px 0 0;
+    -webkit-border-radius: 0 40px 0 0;
+    -o-border-radius: 0 40px 0 0;
+    border-radius: 0 40px 0 0;
+    color: #fff !important;
+    padding: 0 20px;
+    margin: 0 -20px !important;
+}
+.after-centered-heading-2 {
+    border: 2px solid #8dbf42;
+    clear: both;
+    padding: 50px 20px;
+    margin: -5px -20px 40px;
+}
+.numero:before {
+    background-color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+    color: #333;
+    padding: 10px 30px 20px;
+    margin: 0 20px 0 -20px;
+}
+.one:before {
+    content: "1";
+}
+.two:before {
+    content: "2";
+}
+.three:before {
+    content: "3";
+}
+.four:before {
+    content: "4";
+}
+.five:before {
+    content: "5";
+}
+.six:before {
+    content: "6";
+}
+.seven:before {
+    content: "7";
+}
+.eight:before {
+    content: "8";
+}
+.nine:before {
+    content: "9";
+}
+.ten:before {
+    content: "10";
+}
+.gradient-alt h2, .gradient-alt h3, .gradient-alt h4, .gradient-alt a, .dark-block h2, .dark-block h3, .dark-block h4{
+	color:#eee;
+} 
