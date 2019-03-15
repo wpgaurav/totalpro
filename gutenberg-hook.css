@@ -18,6 +18,10 @@ p.has-drop-cap:not(:focus):first-letter {
     margin-right: calc(25% - 25vw);
     margin-left: calc(25% - 25vw);
 }
+.boxed-main-layout #single-blocks .alignwide, .boxed-main-layout #single-blocks .alignfull{
+    margin-right: calc(25% - 20vw);
+    margin-left: calc(25% - 20vw);
+}
 blockquote{
 	background:none;
 	border-left: 5px solid #333;
